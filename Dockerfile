@@ -34,7 +34,7 @@ RUN git checkout 5b9d256f645a2c76ccc2941ba7d1e67370143da0 \
     && mkdir -p build \
     && mv /home/builder/toolchain-linux-armhf.tar.bz2 /home/builder/frida/build/ \
     && mv /home/builder/sdk-linux-armhf.tar.bz2 /home/builder/frida/build/
-ENV FRIDA_HOST=linux-armhf
+ENV FRIDA_HOST=linux-arm
 
 FROM frida-builder as frida-core-builder
 USER builder
