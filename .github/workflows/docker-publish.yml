@@ -1,7 +1,9 @@
 name: Docker
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+  repository_dispatch:
+    types: [dep-change]
 
 env:
   # Use docker.io for Docker Hub if empty
