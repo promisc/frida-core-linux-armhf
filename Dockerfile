@@ -1,4 +1,4 @@
-FROM ghcr.io/promisc/frida-toolchain-linux-armhf:5b9d256f-glibc_2_19 as frida-builder
+FROM ghcr.io/promisc/frida-toolchain-linux-armhf:5b9d256f-glibc_2_17 as frida-builder
 
 # Deps from https://github.com/frida/frida-ci/blob/master/images/worker-ubuntu-20.04-x86_64/Dockerfile
 USER root
